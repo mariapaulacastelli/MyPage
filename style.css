@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --font-title: 'Roboto Mono', monospace;
+  --body: 'Roboto Mono', monospace;
+  --text: #f8f8f2;
+  --text-transparent: #848CAA;
+  --color-primary: #282a36;
+  --color-secundary: #383A59;
+  --color-pink: #ff79c6;
+  --color-green: #50fa7b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text);
+  font-family: var(--body);
+  font-weight: 400;
+  background-color: var(--color-primary);
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/******** HEADER *********/
+
+.topbar {
+  position: fixed;
+  z-index: 99; /* mantém header no topo de outros elementos */
+  width: 100%;
+  background: #282a36;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+}
+
+.topbar-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 24px;
+  transition: none;
+  margin-left: 40px;
+  display: inline-block;
+  color: var(--color-pink);
+}
+
+nav ul {
+  width: 100%;
+  margin: 40px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.topbar-itens {
+  font-family: var(--font-title);
+  color: var(--text-transparent);
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 40px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.topbar-itens:hover {
+  color: var(--color-pink);
+  border-bottom: 2px solid var(--color-pink);
+}
+
+a {
+  text-decoration: none;
+}
+
+/******** HOME *********/
+
+#home {
+  background-color: var(--color-primary);
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-title {
+  font-size: 70px;
+  color: var(--color-pink);
+  font-family: var(--font-title);
+}
+
+.home-subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+strong {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.seta {
+  width: 4rem;
+  height: auto;
+  bottom: 2.5rem;
+  position: absolute;
+}
+
+/******** SOBRE MIM *********/
+
+#about {
+  background-color: var(--color-secundary);
+}
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+
+}
+
+.about-container {
+  margin: auto;
+  padding-top: 20px;
+  max-width: 60%;
+
+}
+
+.about-title {
+  font-size: 30px;
+  color: var(--color-pink);
+  font-family: var(--font-title);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-profile-picture {
+  float: left;
+  margin-top: 20px;
+  max-width: 40%;
+  border: 0.3rem outset var(--text-transparent);
+}
+
+.about-text {
+  float: right;
+  font-size: 1.3vw;
+  margin-top: 20px;
+  margin-left: 20px;
+  max-width: 50%;
+  justify-content: space-evenly;
+
+}
+
+/******** PROJETOS *********/
+
+#projects {
+  background-color: var(--color-primary);
+}
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.projects-title {
+  font-size: 70px;
+  color: var(--color-pink);
+  font-family: var(--font-title);
+}
+
+.projects-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/******** CONTATO *********/
+
+#contact {
+  background-color: var(--color-secundary);
+}
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 70px;
+  color: var(--color-pink);
+  font-family: var(--font-title);
+}
+
+.contact-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.icons-list {
+  margin-top: 20px;
+  padding-bottom: .75rem;
+  padding-top: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--color-primary);
+  border-radius: 9999px;
+  display: flex;
+  box-sizing: border-box;
+  pointer-events: auto;
+
+}
+
+/******** TWITTER *********/
+
+.twitter {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.twitter-svg {
+  filter: invert(62%) sepia(3%) saturate(2454%) hue-rotate(190deg) brightness(89%) contrast(83%);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.twitter-svg:hover {
+  transition-timing-function: linear;
+  transition-duration: .2s;
+  transition-property: all;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -1px;
+  margin-left: -1px;
+  filter: invert(58%) sepia(86%) saturate(3338%) hue-rotate(163deg) brightness(98%) contrast(99%);
+}
+
+/******** LINKEDIN *********/
+
+.linkedin {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 15px;
+
+}
+
+.linkedin-svg {
+  filter: invert(62%) sepia(3%) saturate(2454%) hue-rotate(190deg) brightness(89%) contrast(83%);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.linkedin-svg:hover {
+  transition-timing-function: linear;
+  transition-duration: .2s;
+  transition-property: all;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -1px;
+  margin-left: -1px;
+  filter: invert(20%) sepia(99%) saturate(5902%) hue-rotate(201deg) brightness(97%) contrast(92%);
+}
+
+/******** GITHUB *********/
+
+.github {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 15px;
+
+}
+
+.github-svg {
+  filter: invert(62%) sepia(3%) saturate(2454%) hue-rotate(190deg) brightness(89%) contrast(83%);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.github-svg:hover {
+  transition-timing-function: linear;
+  transition-duration: .2s;
+  transition-property: all;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -1px;
+  margin-left: -1px;
+  filter: invert(68%) sepia(65%) saturate(2262%) hue-rotate(211deg) brightness(100%) contrast(96%);
+}
+
+/******** EMAIL *********/
+.mail {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 15px;
+
+}
+
+.mail-svg {
+  filter: invert(62%) sepia(3%) saturate(2454%) hue-rotate(190deg) brightness(89%) contrast(83%);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.mail-svg:hover {
+  transition-timing-function: linear;
+  transition-duration: .2s;
+  transition-property: all;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -1px;
+  margin-left: -1px;
+  filter: invert(51%) sepia(63%) saturate(3097%) hue-rotate(329deg) brightness(111%) contrast(108%);
+}
+
+/******** FOOTER *********/
+
+.footer {
+  width: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--text-transparent);
+}
